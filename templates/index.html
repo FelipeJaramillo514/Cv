@@ -1,23 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de vida</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
-
 <body>
     <div class="page-shell">
-
         <nav class="navbar">
             <div class="brand">
                 <div class="brand-mark">CV</div>
                 <div class="brand-copy">
                     <strong>Hoja de vida</strong>
-                    <span>Luciana & Bayron</span>
+                    <span>Luciana Cuenca Gomez y Bayron Felipe Jaramillo</span>
                 </div>
             </div>
 
@@ -29,120 +26,239 @@
 
         <header class="hero">
             <section class="hero-copy">
-                <span class="eyebrow">Perfil profesional</span>
+                <div>
+                    <span class="eyebrow">Portafolio academico y profesional</span>
+                    <h1>
+                        Ingenieria de software
+                        <em>con enfoque humano y tecnico</em>
+                    </h1>
+                    <p>
+                        Una sola pagina para presentar dos perfiles reales: Luciana Cuenca
+                        Gomez y Bayron Felipe Jaramillo Galindres, estudiantes de Ingenieria
+                        de Software de la Universidad Cooperativa de Colombia.
+                    </p>
 
-                <h1>
-                    Ingeniería de software 
-                    <em>con impacto real</em>
-                </h1>
+                    <div class="action-row">
+                        <a href="#luciana">Explorar Luciana</a>
+                        <a href="#bayron">Explorar Bayron</a>
+                    </div>
+                </div>
 
-                <p>
-                    Portafolio de Luciana Cuenca Gómez y Bayron Felipe Jaramillo,
-                    estudiantes enfocados en desarrollo, innovación y soluciones tecnológicas.
-                </p>
-
-                <div class="action-row">
-                    <a href="#luciana">Ver Luciana</a>
-                    <a href="#bayron">Ver Bayron</a>
+                <div class="hero-highlights">
+                    <span>4to semestre UCC</span>
+                    <span>Proyectos en web, VR y Arduino</span>
+                    <span>Perfiles con experiencia academica y aplicada</span>
                 </div>
             </section>
 
             <aside class="hero-side">
-                <div class="side-card">
-                    <h3>Acceso rápido</h3>
+                <div class="side-card tone-luciana">
+                    <p class="side-label">Luciana</p>
+                    <h3>Creatividad aplicada al desarrollo</h3>
+                    <p>
+                        Perfil con fortalezas en programacion, herramientas creativas,
+                        pensamiento analitico y proyectos inmersivos.
+                    </p>
+                </div>
 
+                <div class="side-card tone-bayron">
+                    <p class="side-label">Bayron</p>
+                    <h3>Experiencia operativa con orientacion tecnica</h3>
+                    <p>
+                        Perfil enfocado en soluciones practicas, trabajo estructurado,
+                        administracion y desarrollo de proyectos tecnologicos.
+                    </p>
+                </div>
+
+                <div class="side-card quick-card">
+                    <h3>Navegacion rapida</h3>
                     <div class="quick-jump">
-                        <a href="#luciana">Ir a Luciana</a>
-                        <a href="#bayron">Ir a Bayron</a>
+                        <a href="#luciana">Ir al CV de Luciana</a>
+                        <a href="#bayron">Ir al CV de Bayron</a>
                     </div>
                 </div>
             </aside>
         </header>
 
         <main>
-
-            <!-- ================= L U C I A N A ================= -->
-            <section id="luciana" class="cv-section luciana">
+            <section id="luciana" class="cv-section profile-luciana">
                 <div class="cv-shell">
-
                     <aside class="cv-panel">
-                        <span>Luciana Cuenca</span>
-
-                        <h2>Creatividad + tecnología</h2>
-
+                        <span class="panel-tag">Luciana Cuenca Gomez</span>
+                        <h2>Creatividad, analisis y aprendizaje continuo</h2>
                         <p>
-                            Estudiante con enfoque en desarrollo, diseño y soluciones innovadoras.
+                            Estudiante de Ingenieria de Software en 4to semestre, con enfoque
+                            en desarrollo de soluciones educativas, realidad virtual,
+                            aplicaciones web y herramientas creativas.
                         </p>
+
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <strong>Correo</strong>
+                                <a href="mailto:lucianacuencagomez80@gmail.com">lucianacuencagomez80@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Telefono</strong>
+                                <a href="tel:+573182848258">318 284 8258</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>LinkedIn</strong>
+                                <a href="https://www.linkedin.com/in/luciana-cuenca-26356a39b" target="_blank" rel="noreferrer">linkedin.com/in/luciana-cuenca-26356a39b</a>
+                            </div>
+                        </div>
+
+                        <div class="mini-facts">
+                            <div>
+                                <strong>Formacion</strong>
+                                <small>Ingenieria de Software, Universidad Cooperativa de Colombia, Campus Pasto Narino.</small>
+                            </div>
+                            <div>
+                                <strong>Intereses</strong>
+                                <small>Arte digital, danza, ingles, lectura, musica y aprendizaje de nuevas tecnologias.</small>
+                            </div>
+                        </div>
                     </aside>
 
                     <div class="card-grid">
-
                         <article class="cv-card">
-                            <h3>Proyectos</h3>
+                            <p class="card-kicker">Card 1</p>
+                            <h3>Proyectos destacados</h3>
                             <p>
-                                Desarrollo en Unity, Django, Arduino y aplicaciones educativas.
+                                Participacion en proyectos academicos y de investigacion
+                                relacionados con salud, simulacion, realidad inmersiva y desarrollo web.
                             </p>
+                            <ul>
+                                <li><strong>Arritmo:</strong> proyecto de realidad virtual para apoyar el aprendizaje de arritmias cardiacas con Unity y Meta Quest.</li>
+                                <li><strong>Calculadora de dosis pediatricas:</strong> aplicacion web desarrollada con Java y Spring Boot basada en lineamientos IAEPI.</li>
+                                <li><strong>Auto que evita obstaculos:</strong> prototipo con Arduino y sensor ultrasonico para deteccion y reaccion automatica.</li>
+                                <li><strong>Programa para calcular el estres:</strong> aplicacion en Django con procesamiento posterior en R Studio.</li>
+                            </ul>
                         </article>
 
                         <article class="cv-card">
-                            <h3>Habilidades</h3>
+                            <p class="card-kicker">Card 2</p>
+                            <h3>Stack y fortalezas</h3>
+                            <p>
+                                Combina bases tecnicas de desarrollo con herramientas de
+                                ilustracion, modelado y trabajo colaborativo.
+                            </p>
 
                             <div class="chip-list">
                                 <span class="chip">Python</span>
+                                <span class="chip">Java</span>
+                                <span class="chip">C#</span>
                                 <span class="chip">Unity</span>
                                 <span class="chip">React</span>
                                 <span class="chip">Django</span>
+                                <span class="chip">Spring Boot</span>
+                                <span class="chip">Postgres</span>
+                                <span class="chip">MongoDB</span>
+                                <span class="chip">Blender</span>
+                                <span class="chip">Krita</span>
+                                <span class="chip">GitHub</span>
                             </div>
-                        </article>
 
+                            <ul>
+                                <li>Resolucion de problemas, pensamiento analitico y atencion al detalle.</li>
+                                <li>Trabajo en equipo, organizacion del tiempo y adaptabilidad.</li>
+                                <li>Creatividad aplicada al diseno y a la optimizacion de soluciones.</li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
             </section>
 
-            <!-- ================= B A Y R O N ================= -->
-            <section id="bayron" class="cv-section bayron">
+            <section id="bayron" class="cv-section profile-bayron">
                 <div class="cv-shell">
-
                     <aside class="cv-panel">
-                        <span>Bayron Jaramillo</span>
-
-                        <h2>Analítico + técnico</h2>
-
+                        <span class="panel-tag">Bayron Felipe Jaramillo Galindres</span>
+                        <h2>Experiencia operativa con pensamiento tecnico</h2>
                         <p>
-                            Perfil enfocado en soluciones tecnológicas y desarrollo práctico.
+                            Estudiante de Ingenieria de Software con experiencia laboral real
+                            en administracion y operaciones, y con interes por el desarrollo web,
+                            la simulacion y la construccion de soluciones funcionales.
                         </p>
+
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <strong>Correo</strong>
+                                <a href="mailto:felipejaramillog602@gmail.com">felipejaramillog602@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Telefono</strong>
+                                <a href="tel:+573209586971">320 958 6971</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>LinkedIn</strong>
+                                <a href="https://www.linkedin.com/in/felipe-jaramillo-933a0039b/" target="_blank" rel="noreferrer">linkedin.com/in/felipe-jaramillo-933a0039b</a>
+                            </div>
+                        </div>
+
+                        <div class="mini-facts">
+                            <div>
+                                <strong>Formacion</strong>
+                                <small>Ingenieria de Software en UCC y formacion complementaria SENA en contabilizacion y etapas del desarrollo de software.</small>
+                            </div>
+                            <div>
+                                <strong>Experiencia actual</strong>
+                                <small>Encargado administrativo y de operaciones en Lubricantes y Vulcanizadora Narino desde 2017.</small>
+                            </div>
+                        </div>
                     </aside>
 
                     <div class="card-grid">
-
                         <article class="cv-card">
-                            <h3>Experiencia</h3>
+                            <p class="card-kicker">Card 1</p>
+                            <h3>Experiencia y proyectos</h3>
                             <p>
-                                Experiencia en desarrollo web, Arduino y gestión operativa.
+                                Su recorrido mezcla operacion real, atencion al cliente,
+                                administracion y proyectos de desarrollo tecnologico.
                             </p>
+                            <ul>
+                                <li><strong>Experiencia laboral:</strong> mantenimiento y reparacion de vehiculos, inventarios, facturacion electronica, software de ventas y coordinacion con proveedores.</li>
+                                <li><strong>VR para el estudio de la gestacion:</strong> aplicacion educativa en Unity para Meta Quest 3, Quest 2 y Meta Quest Pro.</li>
+                                <li><strong>Pagina web para floristeria:</strong> desarrollo responsive con HTML5, CSS3 y JavaScript.</li>
+                                <li><strong>Arduino y simulacion:</strong> juego de recorrido en circuito y calculo de trayectoria de proyectil con Python, NumPy y Matplotlib.</li>
+                            </ul>
                         </article>
 
                         <article class="cv-card">
-                            <h3>Stack</h3>
+                            <p class="card-kicker">Card 2</p>
+                            <h3>Stack y competencias</h3>
+                            <p>
+                                Perfil orientado a resultados, con una base tecnica practica y
+                                buena capacidad para adaptarse a nuevos entornos.
+                            </p>
 
                             <div class="chip-list">
+                                <span class="chip">Python</span>
                                 <span class="chip">Java</span>
+                                <span class="chip">Django</span>
+                                <span class="chip">Pandas</span>
+                                <span class="chip">NumPy</span>
                                 <span class="chip">Docker</span>
                                 <span class="chip">HTML</span>
                                 <span class="chip">CSS</span>
+                                <span class="chip">Unity</span>
+                                <span class="chip">Blender</span>
+                                <span class="chip">Git</span>
+                                <span class="chip">Azure Boards</span>
                             </div>
-                        </article>
 
+                            <ul>
+                                <li>Pensamiento analitico, proactividad y organizacion del tiempo.</li>
+                                <li>Capacidad para trabajar bajo presion y resolver situaciones imprevistas.</li>
+                                <li>Escucha activa, colaboracion en equipos y orientacion a resultados.</li>
+                            </ul>
+                        </article>
                     </div>
                 </div>
             </section>
-
         </main>
 
         <footer>
-            Hoja de vida moderna — 2026
+            Hoja de vida de Luciana y Bayron. Diseno renovado para una presentacion clara y profesional.
         </footer>
-
     </div>
 </body>
 </html>
