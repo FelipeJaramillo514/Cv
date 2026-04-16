@@ -385,6 +385,32 @@
             line-height: 1.6;
         }
 
+        .contact-list {
+            display: grid;
+            gap: 0.85rem;
+            margin-top: 1.4rem;
+        }
+
+        .contact-item {
+            padding: 0.95rem 1rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.68);
+            border: 1px solid var(--line);
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .contact-item a,
+        .contact-item span {
+            color: var(--muted);
+            line-height: 1.55;
+            word-break: break-word;
+        }
+
         .card-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -427,6 +453,33 @@
         .cv-card li {
             margin-bottom: 0.65rem;
             line-height: 1.55;
+        }
+
+        .chip-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin: 1rem 0 1.2rem;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.55rem 0.85rem;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid var(--line);
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .card-subtitle {
+            margin: 0 0 0.75rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
         }
 
         footer {
@@ -507,11 +560,12 @@
             <section class="hero-copy">
                 <div>
                     <span class="eyebrow">Perfil profesional compartido</span>
-                    <h1>Hoja de vida <em>con mejor enfoque visual</em></h1>
+                    <h1>Ingenieria de software <em>con perfiles reales</em></h1>
                     <p>
-                        Esta pagina reune dos perfiles en una composicion mas clara y elegante.
-                        La navegacion lleva directamente a cada hoja de vida y cada seccion
-                        organiza la informacion en bloques faciles de leer.
+                        Esta pagina presenta las hojas de vida de Luciana Cuenca Gomez y
+                        Bayron Felipe Jaramillo Galindres, ambos estudiantes de Ingenieria
+                        de Software en la Universidad Cooperativa de Colombia, con perfiles
+                        orientados a proyectos, aprendizaje continuo y desarrollo de soluciones.
                     </p>
                     <div class="action-row">
                         <a href="#luciana">Explorar Luciana</a>
@@ -533,19 +587,19 @@
                     <div class="stat-grid">
                         <div class="stat">
                             <strong>2</strong>
-                            <span>Perfiles visibles</span>
+                            <span>Estudiantes de software</span>
                         </div>
                         <div class="stat">
-                            <strong>4</strong>
-                            <span>Cards informativas</span>
+                            <strong>8+</strong>
+                            <span>Proyectos destacados</span>
                         </div>
                         <div class="stat">
-                            <strong>1</strong>
-                            <span>Navegacion central</span>
+                            <strong>4to</strong>
+                            <span>Semestre actual</span>
                         </div>
                         <div class="stat">
-                            <strong>100%</strong>
-                            <span>Scroll en una sola pagina</span>
+                            <strong>UCC</strong>
+                            <span>Campus Pasto Narino</span>
                         </div>
                     </div>
                 </div>
@@ -556,20 +610,35 @@
             <section id="luciana" class="cv-section luciana">
                 <div class="cv-shell">
                     <aside class="cv-panel">
-                        <span>Luciana</span>
-                        <h2>Comunicacion, gestion y cercania humana</h2>
+                        <span>Luciana Cuenca Gomez</span>
+                        <h2>Ingenieria de software con enfoque creativo y analitico</h2>
                         <p>
-                            Un perfil orientado a la organizacion, la coordinacion de procesos
-                            y la construccion de relaciones efectivas en entornos dinamicos.
+                            Estudiante de Ingenieria de Software con capacidad para resolver
+                            problemas, disenar soluciones y adaptarse con rapidez a nuevas
+                            tecnologias, metodologias y entornos colaborativos.
                         </p>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <strong>Correo</strong>
+                                <a href="mailto:lucianacuencagomez80@gmail.com">lucianacuencagomez80@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Telefono</strong>
+                                <a href="tel:+573182848258">318 284 8258</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>LinkedIn</strong>
+                                <a href="https://www.linkedin.com/in/luciana-cuenca-26356a39b" target="_blank" rel="noreferrer">linkedin.com/in/luciana-cuenca-26356a39b</a>
+                            </div>
+                        </div>
                         <div class="profile-points">
                             <div>
-                                <strong>Enfoque</strong>
-                                <small>Servicio, organizacion y trabajo colaborativo.</small>
+                                <strong>Formacion</strong>
+                                <small>Pregrado en Ingenieria de Software en la Universidad Cooperativa de Colombia, cursando 4to semestre.</small>
                             </div>
                             <div>
-                                <strong>Fortaleza</strong>
-                                <small>Capacidad para comunicar, ordenar y acompañar procesos.</small>
+                                <strong>Intereses</strong>
+                                <small>Arte digital, danza, aprendizaje continuo, ingles, musica y lectura.</small>
                             </div>
                         </div>
                     </aside>
@@ -577,30 +646,49 @@
                     <div class="card-grid">
                         <article class="cv-card">
                             <span class="card-tag">Card 1</span>
-                            <h3>Perfil profesional</h3>
+                            <h3>Proyectos destacados</h3>
                             <p>
-                                Luciana proyecta una imagen cercana, organizada y resolutiva.
-                                Se adapta con facilidad a nuevos retos y mantiene una comunicacion
-                                clara en escenarios academicos o laborales.
+                                Su experiencia se enfoca en proyectos academicos y de semillero
+                                donde combina desarrollo web, programacion, realidad inmersiva
+                                y trabajo con hardware.
                             </p>
                             <ul>
-                                <li>Facilidad para coordinar tareas y dar seguimiento a procesos.</li>
-                                <li>Comunica ideas con claridad y empatia.</li>
-                                <li>Se integra bien a equipos con objetivos compartidos.</li>
+                                <li><strong>Arritmo:</strong> proyecto de realidad virtual para el aprendizaje de arritmias cardiacas en Unity y dispositivos Meta Quest.</li>
+                                <li><strong>Calculadora de dosis pediatricas:</strong> aplicacion web construida con Java y Spring Boot para calculos basados en lineamientos IAEPI.</li>
+                                <li><strong>Auto que evita obstaculos:</strong> desarrollo en Arduino con sensor ultrasonico para deteccion y reaccion en tiempo real.</li>
+                                <li><strong>Programa para calcular el estres:</strong> aplicacion web en Python y Django con analisis posterior en R Studio.</li>
                             </ul>
                         </article>
 
                         <article class="cv-card">
                             <span class="card-tag">Card 2</span>
-                            <h3>Experiencia y habilidades</h3>
+                            <h3>Habilidades tecnicas y fortalezas</h3>
                             <p>
-                                Sus fortalezas se enfocan en la gestion operativa y el cuidado
-                                del detalle, aportando orden y confianza en ambientes exigentes.
+                                Luciana combina bases tecnicas de desarrollo con herramientas
+                                creativas y una forma de trabajo marcada por la organizacion,
+                                la responsabilidad y la atencion al detalle.
                             </p>
+                            <div class="chip-list">
+                                <span class="chip">Python</span>
+                                <span class="chip">Java</span>
+                                <span class="chip">C#</span>
+                                <span class="chip">Django</span>
+                                <span class="chip">Spring Boot</span>
+                                <span class="chip">React</span>
+                                <span class="chip">Pandas</span>
+                                <span class="chip">NumPy</span>
+                                <span class="chip">Postgres</span>
+                                <span class="chip">MongoDB</span>
+                                <span class="chip">Unity</span>
+                                <span class="chip">Blender</span>
+                                <span class="chip">Git y GitHub</span>
+                                <span class="chip">Arduino</span>
+                            </div>
+                            <p class="card-subtitle">Competencias blandas</p>
                             <ul>
-                                <li>Manejo de herramientas ofimaticas y apoyo administrativo.</li>
-                                <li>Organizacion documental y atencion al detalle.</li>
-                                <li>Buen trato interpersonal y disposicion de servicio.</li>
+                                <li>Trabajo en equipo, comunicacion asertiva y habilidades comunicativas.</li>
+                                <li>Pensamiento analitico, creatividad y resolucion de problemas.</li>
+                                <li>Adaptabilidad, aprendizaje continuo, iniciativa y tolerancia a la presion.</li>
                             </ul>
                         </article>
                     </div>
@@ -610,20 +698,35 @@
             <section id="bayron" class="cv-section bayron">
                 <div class="cv-shell">
                     <aside class="cv-panel">
-                        <span>Bayron</span>
-                        <h2>Tecnologia, analisis y soluciones practicas</h2>
+                        <span>Bayron Felipe Jaramillo Galindres</span>
+                        <h2>Tecnologia, analisis y experiencia operativa aplicada</h2>
                         <p>
-                            Un perfil con orientacion tecnica, pensamiento estructurado y
-                            motivacion por transformar ideas en soluciones utiles.
+                            Estudiante de Ingenieria de Software con orientacion tecnica y
+                            analitica, capacidad para adaptarse rapido a nuevas herramientas
+                            y experiencia real en procesos administrativos y operativos.
                         </p>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <strong>Correo</strong>
+                                <a href="mailto:felipejaramillog602@gmail.com">felipejaramillog602@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Telefono</strong>
+                                <a href="tel:+573209586971">320 958 6971</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>LinkedIn</strong>
+                                <a href="https://www.linkedin.com/in/felipe-jaramillo-933a0039b/" target="_blank" rel="noreferrer">linkedin.com/in/felipe-jaramillo-933a0039b</a>
+                            </div>
+                        </div>
                         <div class="profile-points">
                             <div>
-                                <strong>Enfoque</strong>
-                                <small>Desarrollo, mejora continua y resolucion de problemas.</small>
+                                <strong>Formacion</strong>
+                                <small>Ingenieria de Software en la Universidad Cooperativa de Colombia, cursando 4to semestre, con formacion complementaria del SENA.</small>
                             </div>
                             <div>
-                                <strong>Fortaleza</strong>
-                                <small>Analiza, construye y optimiza con criterio funcional.</small>
+                                <strong>Experiencia actual</strong>
+                                <small>Encargado administrativo y de operaciones en Taller Automotriz Lubricantes y Vulcanizadora Narino desde 2017.</small>
                             </div>
                         </div>
                     </aside>
@@ -631,30 +734,49 @@
                     <div class="card-grid">
                         <article class="cv-card">
                             <span class="card-tag">Card 1</span>
-                            <h3>Perfil profesional</h3>
+                            <h3>Experiencia y proyectos</h3>
                             <p>
-                                Bayron se caracteriza por su curiosidad tecnica, su disciplina
-                                para aprender y su capacidad para convertir necesidades concretas
-                                en propuestas de trabajo ordenadas.
+                                Bayron combina experiencia laboral en el sector automotriz con
+                                proyectos de software, simulacion, desarrollo web y prototipado
+                                electronico.
                             </p>
                             <ul>
-                                <li>Pensamiento analitico aplicado a proyectos digitales.</li>
-                                <li>Interes constante por aprender nuevas herramientas.</li>
-                                <li>Capacidad para estructurar soluciones funcionales.</li>
+                                <li><strong>Experiencia laboral:</strong> mantenimiento y reparacion de vehiculos, atencion al cliente, inventarios, facturacion y coordinacion con proveedores.</li>
+                                <li><strong>Proyecto de realidad virtual:</strong> aplicacion educativa sobre gestacion desarrollada en Unity para Meta Quest 3, Quest 2 y Meta Quest Pro.</li>
+                                <li><strong>Pagina web para floristeria:</strong> sitio funcional con HTML5, CSS3 y JavaScript, enfocado en catalogo y experiencia responsive.</li>
+                                <li><strong>Arduino y simulacion:</strong> juego de recorrido en circuito y calculo de trayectoria de proyectil con Python, NumPy y Matplotlib.</li>
                             </ul>
                         </article>
 
                         <article class="cv-card">
                             <span class="card-tag">Card 2</span>
-                            <h3>Experiencia y habilidades</h3>
+                            <h3>Stack tecnico, estudios y competencias</h3>
                             <p>
-                                Su perfil combina bases tecnicas con una forma de trabajo
-                                enfocada en objetivos, claridad y mejora progresiva.
+                                Su perfil integra conocimientos tecnicos, disciplina de trabajo
+                                y una formacion que combina software, contabilidad operativa y
+                                mejora continua.
                             </p>
+                            <div class="chip-list">
+                                <span class="chip">Python</span>
+                                <span class="chip">Java</span>
+                                <span class="chip">Django</span>
+                                <span class="chip">Pandas</span>
+                                <span class="chip">NumPy</span>
+                                <span class="chip">SQLite</span>
+                                <span class="chip">Docker</span>
+                                <span class="chip">HTML5</span>
+                                <span class="chip">CSS3</span>
+                                <span class="chip">Unity</span>
+                                <span class="chip">Blender</span>
+                                <span class="chip">Git y GitHub</span>
+                                <span class="chip">Azure Boards</span>
+                                <span class="chip">Arduino</span>
+                            </div>
+                            <p class="card-subtitle">Formacion y habilidades blandas</p>
                             <ul>
-                                <li>Bases en desarrollo web y logica de programacion.</li>
-                                <li>Mantenimiento de proyectos y trabajo orientado a resultados.</li>
-                                <li>Colaboracion efectiva en equipos con metas compartidas.</li>
+                                <li>Bachiller academico del Instituto Teresiano y tecnico SENA en contabilizacion de operaciones comerciales y financieras.</li>
+                                <li>Formacion complementaria SENA en etapas del desarrollo de software.</li>
+                                <li>Pensamiento analitico, adaptacion rapida, organizacion del tiempo, proactividad y trabajo en equipo.</li>
                             </ul>
                         </article>
                     </div>
